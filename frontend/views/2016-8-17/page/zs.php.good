@@ -1,0 +1,85 @@
+<?php
+
+use yii\helpers\Html;
+use yii\widgets\DetailView;
+use yii\widgets\Breadcrumbs;
+/* @var $this yii\web\View */
+/* @var $model common\models\Page */
+
+$this->title ='招商加盟';
+//$this->title = $model->title;
+//$this->registerMetaTag(['name' => 'keywords', 'content' =>$model->keywords ]);
+//$this->registerMetaTag(['name' => 'description', 'content' =>$model->description ]);
+//$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Pages'), 'url' => ['index']];
+//$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="products-top">
+    <!-- container -->
+    <div class="container">
+
+        <div class="products-top-grids wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+            <div class="col-md-12 products-grid">
+                <h1 class="text-center" style="color: #ff6b5c; margin-bottom: 50px;">2016最后一块未开发高利润的行业</h1>
+                <img src="/images/z1.jpg" class="img-responsive">
+                <div class="clearfix"> </div>
+            </div>
+            <div class="col-md-12 products-grid">
+                <h1 class="text-center" style="color: #ff6b5c; margin-bottom: 50px;  margin-top:50px;">传统水果店与拼一下相比</h1>
+                <img src="/images/z2.jpg" class="img-responsive">
+                <div class="clearfix"> </div>
+            </div>
+            <div class="col-md-12 products-grid">
+                <h1 class="text-center" style="color: #39969a; margin-bottom: 50px;  margin-top:50px;">传统电商与拼一下相比</h1>
+                <img src="/images/z3.jpg" class="img-responsive">
+                <div class="clearfix"> </div>
+            </div><div class="col-md-12 products-grid">
+                <h1 class="text-center" style="color: #ff6b5c;  font-size:50px;margin-bottom: 20px; margin-top:50px;">合伙人收益分析</h1>
+                <h1 class="text-center" style="color: #ff6b5c; font-size: 28px; color: #393939;">直接业务收入来源</h1>
+                <img src="/images/z41.jpg" class="img-responsive">
+                <h1 class="text-center" style="color: #ff6b5c; font-size: 28px; color: #393939;">自有货源收益</h1>
+                <img src="/images/z51.jpg" class="img-responsive">
+                <h1 class="text-center" style="color: #ff6b5c; font-size: 28px; color: #393939;">广告收益</h1>
+                <img src="/images/z6.jpg" class="img-responsive">
+                <h1 class="text-center" style="color: #ff6b5c; font-size: 28px; color: #393939;">入驻平台收益</h1>
+                <img src="/images/z81.jpg" class="img-responsive">
+                <h1 class="text-center" style="color: #ff6b5c; font-size: 28px; color: #393939;">合伙人货源来源</h1>
+                <img src="/images/z7.jpg" class="img-responsive">
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="products-top-grids wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+            <h1 class="text-center" style="color: #ff6b5c;  font-size:50px;margin-bottom: 20px; margin-top:50px;">市场开拓</h1>
+            <h1 class="text-center" style="color: #ff6b5c; font-size: 28px; color: #393939; margin: 30px 0;">拼团对市场开拓的优势</h1>
+            <div class="col-md-12 products-grid">
+                <img src="/images/zf.jpg" class="img-responsive">
+                <div class="clearfix"> </div>
+            </div>
+
+            <div class="clearfix"> </div>
+        </div>
+        <div class="products-top-grids wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+
+            <h1 class="text-center" style="color: #ff6b5c; font-size: 28px; color: #393939; margin: 30px 0;">政府扶持</h1>
+            <div class="col-md-12 products-grid">
+                <img src="/images/z10.jpg" class="img-responsive">
+                <div class="clearfix"> </div>
+            </div>
+
+            <div class="clearfix"> </div>
+        </div>
+
+    </div>
+
+    <!-- container -->
+</div>
+<!-- //products-top -->
+<!-- products-bottom -->
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,30 @@
+<?php
+header("Content-type: text/html; charset=utf-8");
+if($_SERVER['REQUEST_METHOD']!='POST'){
+        header("location: http://top.missionciyco.com");
+		exit();
+    }
+$name=htmlspecialchars($_POST['name'],ENT_COMPAT);
+if($name==""){header("location: http://top.missionciyco.com");exit();}
+
+$sj=htmlspecialchars($_POST['sj'],ENT_COMPAT);	
+$city=htmlspecialchars($_POST['city'],ENT_COMPAT);	
+$business=htmlspecialchars($_POST['business'],ENT_COMPAT);	
+$money=htmlspecialchars($_POST['money'],ENT_COMPAT);	
+
+
+
+$saytime=time();
+$iipp=$_SERVER["REMOTE_ADDR"];
+
+$con = mysql_connect("127.0.0.1","pintupp","U5s5K8w8");
+mysql_select_db("pintupp", $con);
+//mysql_query("INSERT INTO car_enewsfeedback (bid, phoneNum, chex, title, systime) VALUES ('5', '".$sname."', '".$systime."','表单留言','".$systime."')");
+mysql_query("INSERT INTO book (name,tel,city,business ,status,money,mail,created_at) VALUES ('".$name."', '".$sj."', '".$city."', '".$business."', '1', '".$money."','top.missionciyco.com留言', '".$saytime."')");
+mysql_close($con);
+
+
+echo "<script> alert('留言成功');parent.location.href='http://top.missionciyco.com'; </script>"; 
+
+
+?>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>contact</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+		<meta name="description" content="description" />
+		<meta name="author" content="author,email address">
+		<meta name="robots" content="index,follow">
+		<!--定义网页搜索引擎索引方式-->
+		<meta name="keywords" content="your keywords" />
+		<meta name="format-detection" content="telephone=no" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="css/iconfont.css" type="text/css" media="all" />	
+	</head>
+
+	<body>
+		<div class="header ">
+			<div class="container ">
+				<div class="header-logo">
+					<a href="index.html"><img src="images/logo.png"></a>
+				</div>
+				<div class="header-info">
+					<div class="text-right">
+						<a href="#">招商代理</a>
+						<span>|</span>
+						<a href="#">在线留言</a>
+					</div>
+					<i class="iconfont">&#xe600;</i>
+					<h4>15021627588</h4>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="navbar  navbar-default  top1" style="background: #345280; border-radius: 0; border: none;">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="more">更多...</span>            
+		          </button>
+				</div>
+				<div class="navbar-collapse collapse" role="navigation">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="service.html">服务业务</a>
+						</li>
+						<li>
+							<a href="teamwork.html">合作保障</a>
+						</li>
+						<li class="active">
+							<a href="contact.html">联系我们</a>
+						</li>
+						<li>
+							<a href="brand.html">品牌街</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--top end-->
+		<!--banner star-->
+		<div id="myCarousel" class="carousel slide " data-ride="carousel">
+			<!-- 轮播（Carousel）项目 -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="images/ban4.jpg" alt="First slide">
+				</div>
+			</div>
+			<!-- 轮播（Carousel）导航 -->
+		</div>
+		<!--banner end-->
+		<div class="contact zoomInLeft animated">
+			<div class="container ">
+				<div class="row">
+					<div class="col-md-12 con-grids ">
+						<img src="images/con1.png" class="center-block  img-responsive">
+						<h1>上海品途品牌管理有限公司</h1>
+						<p>电话：15021627588</p>
+						<p>E-mail：pintu@pintupp.com</p>
+						<p>地址：上海市普陀区中江路118弄22号海亮大厦1004室</p>
+					</div>
+					<div class="col-md-12 con-grids ">
+						<img src="images/con2.png" class="center-block  img-responsive">
+						<h1>企业服务咨询</h1>
+						<p>咨询热线：15021627588</p>
+						<p>咨询范围：营销咨询规划、渠道建设、产品销售、托管运营、招商加盟、新农村电商、企业转型升级等方面的服务</p>
+					</div>
+					<div class="col-md-12 con-grids " style="border: none;">
+						<img src="images/con3.png" class="center-block  img-responsive">
+						<h1>投资创业者咨询</h1>
+						<p>咨询热线：15021627588</p>
+						<p>咨询范围：创业找项目、生意合伙、寻找好项目、赚钱工具、小额试销等</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid hidden-xs" style="position: relative; padding: 0;">
+			<div style="width:100%;height:500px;border:#ccc solid 1px;" id="dituContent"></div>
+			<script type="text/javascript">
+				//创建和初始化地图函数：
+				function initMap() {
+					createMap(); //创建地图
+					setMapEvent(); //设置地图事件
+					addMapControl(); //向地图添加控件
+				}
+
+				//创建地图函数：
+				function createMap() {
+					var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
+					var point = new BMap.Point(121.39959, 31.22781); //定义一个中心点坐标
+					map.centerAndZoom(point, 17); //设定地图的中心点和坐标并将地图显示在地图容器中
+					window.map = map; //将map变量存储在全局
+				}
+
+				//地图事件设置函数：
+				function setMapEvent() {
+					map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
+					map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
+					map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
+					map.enableKeyboard(); //启用键盘上下左右键移动地图
+				}
+
+				//地图控件添加函数：
+				function addMapControl() {
+					//向地图中添加缩放控件
+					var ctrl_nav = new BMap.NavigationControl({
+						anchor: BMAP_ANCHOR_TOP_LEFT,
+						type: BMAP_NAVIGATION_CONTROL_LARGE
+					});
+					map.addControl(ctrl_nav);
+					//向地图中添加缩略图控件
+					var ctrl_ove = new BMap.OverviewMapControl({
+						anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+						isOpen: 1
+					});
+					map.addControl(ctrl_ove);
+					//向地图中添加比例尺控件
+					var ctrl_sca = new BMap.ScaleControl({
+						anchor: BMAP_ANCHOR_BOTTOM_LEFT
+					});
+					map.addControl(ctrl_sca);
+				}
+
+				initMap(); //创建和初始化地图
+			</script>
+			<div class="db"></div>
+		</div>
+		<!--	contact end-->
+		<div class="mail">
+			<!-- container -->
+			<div class="container">
+				<div class="col-md-10 col-lg-offset-1 contact-form  bounceIn animated">
+					<h1>留言申请合作</h1>
+					<form>
+						<input type="text" placeholder="请输入姓名" required>
+						<input type="text" placeholder="请输入手机号" required>
+						<input type="text" placeholder="请输入公司名字" required>
+						<textarea placeholder="产品/项目说明"></textarea>
+						<input type="submit" value="提交申请">
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!--contact end-->
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5  col-sm-offset-1 col-xs-offset-1 ">
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<h3>公司简介</h3>
+								<ul>
+									<li>
+										<a href="#">业务概况</a>
+									</li>
+									<li>
+										<a href="#">发展历程</a>
+									</li>
+									<li>
+										<a href="#">企业荣誉</a>
+									</li>
+									<li>
+										<a href="#">品牌文化</a>
+									</li>
+									<li>
+										<a href="#">品牌战略</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4  col-sm-4 col-xs-4">
+								<h3>服务业务</h3>
+								<ul>
+									<li>
+										<a href="#">招商外包</a>
+									</li>
+									<li>
+										<a href="#">产品孵化</a>
+									</li>
+									<li>
+										<a href="#">项目推广</a>
+									</li>
+									<li>
+										<a href="#">OTO方案</a>
+									</li>
+									<li>
+										<a href="#">合作客户</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4  col-sm-4 col-xs-4">
+								<h3>招商加盟</h3>
+								<ul>
+									<li>
+										<a href="#">招商项目</a>
+									</li>
+									<li>
+										<a href="#">加入我们</a>
+									</li>
+									<li>
+										<a href="#">客户案例</a>
+									</li>
+									<li>
+										<a href="#">客户评价</a>
+									</li>
+									<li>
+										<a href="#">合作保障</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5  col-sm-offset-1  col-xs-offset-1">
+						<div class="row details">
+							<div class="col-lg-8 col-sm-8 col-xs-12  ">
+								<h3>联系我们</h3>
+								<div class="phone">
+									<p>咨询热线：021-5135-2250</p>
+								</div>
+								<div class="adress">
+									<p>联系地址：上海市普陀区中江路118弄22号</p>
+								</div>
+							</div>
+							<div class="col-lg-4  col-sm-2  col-xs-12 wx ">
+								<img src="images/ewm.png" class="img-responsive center-block">
+								<p class="text-center">官方微信</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row footer-bottom">
+					<div class="col-sm-11 col-sm-offset-1 col-xs-offset-1">Copyright&copy;2016-2023 上海品途品牌管理有限公司</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/public.js"></script>
+
+	</body>
+
+</html>
